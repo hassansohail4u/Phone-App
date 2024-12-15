@@ -1,0 +1,31 @@
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+#cart{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.quantity{
+    font-size: 20px;
+}
+
+.image{
+   width: 250px;
+   height: 250px;
+}
+
+.quantity-count{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* align-items:; */
+    gap: 8px;
+
+}
+
