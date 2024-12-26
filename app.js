@@ -330,14 +330,12 @@ const phones =  [{
  
  
  
+   const count = document.querySelector("#count")
  
  
- 
-   function addCart(index) {
-     // console.log(index);
-    const checkIndex = cartItems.indexOf(phones[index]) 
-    console.log(checkIndex);
-   //  cartItems.push(phones[index])
+ function addCart(index) {
+const checkIndex = cartItems.indexOf(phones[index]) 
+console.log(checkIndex);
  
      if (checkIndex == -1) {
          cartItems.push(phones[index])
@@ -349,8 +347,9 @@ const phones =  [{
      }
      console.log(cartItems);
  
-     const count = document.querySelector("#count")
-     count.innerHTML = cartItems.length
+
+     var countValue = 0
+     count.innerHTML = countValue++
      
      Swal.fire({
        title: "Good job!",
